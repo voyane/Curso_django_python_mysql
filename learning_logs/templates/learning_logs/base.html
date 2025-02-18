@@ -6,11 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    {% extends "learning_logs/base.html" %} 
+    <a href="{% url 'index' %}"><h1> Learning Log</h1></a>   <!--Tudo que estiver dentro de chaves sera tratado como codigo python.-->
 
-        
     {% block content %}
-        <p>Essa aplicacao te ajudara a organizar os seus estudos.</p>
+
     {% endblock content %}
-</body>
+</body> 
 </html>

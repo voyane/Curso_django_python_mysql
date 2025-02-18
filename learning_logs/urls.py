@@ -20,5 +20,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='index'),
+    path('topics', views.topics, name='topics'), #acesso a BD
+    path('topic/<topic_id>/', views.topic, name='topic'), 
 ]
