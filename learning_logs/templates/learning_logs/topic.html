@@ -9,9 +9,11 @@
     {% extends "learning_logs/base.html" %}
 
     {% block content %}
-        <h3>Topico: {{ topic }}</h3>
+        <p>Topico: {{ topic }}</p>
 
-        <p>Entradas: </p>
+        <p>Descricao: </p>
+
+        <p><a href="{% url 'new_entry' topic.id %}">Adicione uma descricao</a></p>
         <ul>
             {% for entry in entries %}
                 <li>

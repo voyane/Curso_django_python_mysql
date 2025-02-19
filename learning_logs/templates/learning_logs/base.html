@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="{% url 'index' %}"><h1> Learning Log</h1></a>   <!--Tudo que estiver dentro de chaves sera tratado como codigo python.-->
+    <a href="{% url 'index' %}">Learning Log</a> - <!--Tudo que estiver dentro de chaves sera tratado como codigo python.-->
+    <a href="{% url 'topics' %}">Topicos</a>  
 
     {% block content %}
 
