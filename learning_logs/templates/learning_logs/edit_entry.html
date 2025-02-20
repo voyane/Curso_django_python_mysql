@@ -1,0 +1,14 @@
+{% extends 'learning_logs/base.html'%}
+
+{% block content%}
+    <p><a href="{% url 'topic' topic.id %}">{{topic}}</a></p>
+
+    <p>Editar descricao</p>
+
+    <form action="{% url 'edit_entry' entry.id %}" method = "post">
+        {% csrf_token %} <!--tag de seguranca -->
+        {{ form.as_p }}   <!-- tag de formatacao -->
+    </form>
+
+    <button name="submit">Actualizar</button>
+{% endblock content %}
